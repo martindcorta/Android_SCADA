@@ -37,7 +37,7 @@ public class LeerVoltaje : MonoBehaviour
     private IEnumerator CorrutinaLeer(System.Action accionAlTerminar)
     {
 
-        UnityWebRequest web = UnityWebRequest.Get("https://dmaenergia.000webhostapp.com/GetVoltaje.php");
+        UnityWebRequest web = UnityWebRequest.Get("https://*****.000webhostapp.com/GetVoltaje.php");
         yield return web.SendWebRequest();
         //esperamos a que vuelva
         //volvio
