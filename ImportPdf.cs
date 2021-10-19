@@ -8,7 +8,7 @@ public class ImportPdf : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //UnityWebRequest web = UnityWebRequest.Get("https://dmaenergia.000webhostapp.com/pdf.php");//esta clase de unity me permite realizar peticiones y manejar respuestas HTTP mediante el POST/PUT
+        //UnityWebRequest web = UnityWebRequest.Get("https://*****.000webhostapp.com/pdf.php");//esta clase de unity me permite realizar peticiones y manejar respuestas HTTP mediante el POST/PUT
         //web.SendWebRequest();// se queda esperando hasta que el pedido es devuelto
         //StartCoroutine(GetText());
     }
@@ -28,7 +28,7 @@ public class ImportPdf : MonoBehaviour
     private IEnumerator CorrutinaLeer(System.Action accionAlTerminar)
     { //enumero los pasos para realizar la lectura a la nube
 
-        UnityWebRequest web = UnityWebRequest.Get("https://dmaenergia.000webhostapp.com/pdf.php");//esta clase de unity me permite realizar peticiones y manejar respuestas HTTP mediante el POST/PUT
+        UnityWebRequest web = UnityWebRequest.Get("https://******.000webhostapp.com/pdf.php");//esta clase de unity me permite realizar peticiones y manejar respuestas HTTP mediante el POST/PUT
         yield return web.SendWebRequest();// se queda esperando hasta que el pedido es devuelto
         //Una vez que vuelve....
         accionAlTerminar();
@@ -40,7 +40,7 @@ public class ImportPdf : MonoBehaviour
     /*
     IEnumerator GetText()
     {
-        UnityWebRequest www = UnityWebRequest.Get("https://dmaenergia.000webhostapp.com/pdf.php");
+        UnityWebRequest www = UnityWebRequest.Get("https://******.000webhostapp.com/pdf.php");
         //yield return www.Send();
         yield return www.SendWebRequest();
     }*/
